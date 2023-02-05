@@ -4,9 +4,13 @@
 
 class Game {
 private:
+    
+    bool isrunning ; 
 	SDL_Window * window ; 
-	SDL_Renderer * renderer ; 
-public: 
+	SDL_Renderer * renderer ;
+    SDL_Texture * tank_image_texture  ; 
+public:
+    
     Game() ; 
     ~Game() ; 
     void initialize  (); 
@@ -14,7 +18,6 @@ public:
 	void update () ; 
 	void render () ; 
 	void run () ; 		 
-    void destroy () ; 
-    
+    void destroy () ;
 } ;  
 #endif
